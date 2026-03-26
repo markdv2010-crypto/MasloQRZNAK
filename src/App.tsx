@@ -266,10 +266,10 @@ export default function App() {
                 <select 
                   value={options.orientation}
                   onChange={e => setOptions({...options, orientation: e.target.value as any})}
-                  className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2 text-sm text-white focus:border-blue-500/50 outline-none transition-all appearance-none"
+                  className="w-full bg-gray-900 border border-white/20 rounded-xl px-4 py-2 text-sm text-white focus:border-blue-500/50 outline-none transition-all appearance-none"
                 >
-                  <option value="portrait">Книжная</option>
-                  <option value="landscape">Альбомная</option>
+                  <option value="portrait" className="bg-gray-900 text-white">Книжная</option>
+                  <option value="landscape" className="bg-gray-900 text-white">Альбомная</option>
                 </select>
               </div>
               <div className="space-y-2">
